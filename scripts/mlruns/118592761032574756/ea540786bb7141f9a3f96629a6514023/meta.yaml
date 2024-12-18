@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ml/Documents/my-ml-service/scripts/mlruns/118592761032574756/ea540786bb7141f9a3f96629a6514023/artifacts
+end_time: 1734526492726
+entry_point_name: ''
+experiment_id: '118592761032574756'
+lifecycle_stage: active
+run_id: ea540786bb7141f9a3f96629a6514023
+run_name: legendary-asp-639
+run_uuid: ea540786bb7141f9a3f96629a6514023
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734525315018
+status: 4
+tags: []
+user_id: ml

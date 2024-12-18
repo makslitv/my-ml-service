@@ -1,0 +1,6 @@
+artifact_location: file:///Users/ml/Documents/my-ml-service/scripts/mlruns/118592761032574756
+creation_time: 1734525314584
+experiment_id: '118592761032574756'
+last_update_time: 1734525314584
+lifecycle_stage: active
+name: mnist_resnet_exp

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ml/Documents/my-ml-service/scripts/mlruns/118592761032574756/669aa96d069c4ba4b1090c079adcfd37/artifacts
+end_time: 1734528041238
+entry_point_name: ''
+experiment_id: '118592761032574756'
+lifecycle_stage: active
+run_id: 669aa96d069c4ba4b1090c079adcfd37
+run_name: shivering-hen-1000
+run_uuid: 669aa96d069c4ba4b1090c079adcfd37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734528041216
+status: 4
+tags: []
+user_id: ml

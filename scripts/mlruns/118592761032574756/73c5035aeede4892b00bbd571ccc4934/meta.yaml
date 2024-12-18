@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ml/Documents/my-ml-service/scripts/mlruns/118592761032574756/73c5035aeede4892b00bbd571ccc4934/artifacts
+end_time: 1734533296413
+entry_point_name: ''
+experiment_id: '118592761032574756'
+lifecycle_stage: active
+run_id: 73c5035aeede4892b00bbd571ccc4934
+run_name: wise-fawn-269
+run_uuid: 73c5035aeede4892b00bbd571ccc4934
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734532659542
+status: 3
+tags: []
+user_id: ml
