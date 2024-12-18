@@ -18,10 +18,10 @@ Installation and launch
 
 Clone repository:
 
-bash
+'''bash
 Copy code
 git clone <repository-link>
-cd my-ml-service
+cd my-ml-service'''
 Create an environment and install dependencies:
 
 bash
