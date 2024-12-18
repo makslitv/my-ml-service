@@ -9,9 +9,9 @@ from torchvision import datasets, transforms, models
 import numpy as np
 
 def main():
-    batch_size = 64
+    batch_size = 128
     lr = 0.001
-    epochs = 2
+    epochs = 1
     val_ratio = 0.2
     random_seed = 42
 
@@ -19,7 +19,7 @@ def main():
     np.random.seed(random_seed)
 
     transform = transforms.Compose([
-        transforms.Resize((224,224)),
+        transforms.Resize((64,64)),
         transforms.Grayscale(num_output_channels=3),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
