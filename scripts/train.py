@@ -25,6 +25,7 @@ def main():
         transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
     ])
 
+    print("MNIST...")
     dataset = datasets.MNIST(root="./data", train=True, download=True, transform=transform)
     dataset_size = len(dataset)
     val_size = int(dataset_size * val_ratio)
@@ -34,6 +35,7 @@ def main():
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
+    print(«загрузка предоб ResNet18...")
     model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 10)
@@ -52,6 +54,7 @@ def main():
         mlflow.log_param("epochs", epochs)
 
         for epoch in range(epochs):
+            print(f" {epoch+1}/{epochs}")
             model.train()
             train_loss = 0.0
             correct = 0
@@ -88,7 +91,7 @@ def main():
             val_acc = correct_val / total_val
             avg_val_loss = val_loss / total_val
 
-            print(f"Epoch [{epoch+1}/{epochs}]: "
+            print(f"[{epoch+1}/{epochs}]: "
                   f"Train Loss: {avg_train_loss:.4f}, Train Acc: {train_acc:.4f}, "
                   f"Val Loss: {avg_val_loss:.4f}, Val Acc: {val_acc:.4f}")
 
@@ -99,7 +102,7 @@ def main():
 
         mlflow.pytorch.log_model(model, artifact_path="model")
 
-        print("Training finished. Model logged to MLflow.")
+        print("Training finished Model logged to MLflow.")
 
 if __name__ == "__main__":
     main()
