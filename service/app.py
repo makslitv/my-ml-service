@@ -26,7 +26,7 @@ def predict():
     image_data = data.get("image", None)
 
     if image_data is None or len(image_data) != 784:
-        return jsonify({"error": "Invalid input. 'image' should be a list of length 784."}), 400
+        return jsonify({"error": "There is invalid input. 'image' should be a list of length 784."}), 400
 
     arr = np.array(image_data, dtype=np.float32).reshape(28, 28)
     pil_img = Image.fromarray((arr*255).astype(np.uint8), mode='L')  # 'L' – grayscale
