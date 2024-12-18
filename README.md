@@ -82,4 +82,6 @@ The model is trained to classify 10 classes (numbers 0 to 9).
 Logging of parameters, metrics and model is done through MLflow.
 
 
-
+Author
+M. Litvinov
+MDS HSE
