@@ -18,17 +18,18 @@ Installation and launch
 
 Clone repository:
 
-'''bash
+```bash```
 Copy code
 git clone <repository-link>
-cd my-ml-service'''
+cd my-ml-service```
+
 Create an environment and install dependencies:
 
 bash
 Copy code
-conda create -n torch_env python=3.9
+```conda create -n torch_env python=3.9```
 conda activate torch_env
-pip install -r service/requirements.txt
+pip install -r service/requirements.txt```
 Train the model:
 
 bash
