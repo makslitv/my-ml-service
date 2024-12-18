@@ -35,7 +35,7 @@ def main():
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
-    print(«загрузка предоб ResNet18...")
+    print(" ResNet18...")
     model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 10)
