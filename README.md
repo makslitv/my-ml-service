@@ -21,7 +21,7 @@ Clone repository:
 
 bash
    ```
-   git clone <ссылка-на-репозиторий>
+   git clone <link to this repo>
    cd my-ml-service
 ```
 
